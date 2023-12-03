@@ -1,0 +1,1 @@
+input.reduce((a,b)=>+((c=b.replace(RegExp(d='(?=(-|one|two|three|four|five|six|seven|eight|nine|-))','g'),(e,f)=>d.split`|`.indexOf(f)).match(/\d/g))[0]+c.pop())+a,0);
