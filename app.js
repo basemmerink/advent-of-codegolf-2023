@@ -14,4 +14,5 @@ try {
 }
 const script = fs.readFileSync(`${process.argv[2]}/${process.argv[3]}.js`).toString();
 
-console.log(eval(script));
+f=eval(script);
+console.log(f(input));
