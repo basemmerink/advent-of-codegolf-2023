@@ -1,1 +1,1 @@
-// todo
+input[r='reduce']((a,b)=>a+[...b.matchAll(/(\d+) ([rgb])/g)][r]((c,d)=>(c[i='rgb'.indexOf(d[2])]=Math.max(c[i],d[1]),c),[0,0,0])[r](Math.imul),0)

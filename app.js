@@ -5,7 +5,13 @@ if (process.argv.length < 4) {
     return;
 }
 
-let input = fs.readFileSync(`${process.argv[2]}/input.txt`).toString().split('\n');
+let input = '';
+try {
+    input = fs.readFileSync(`${process.argv[2]}/input.txt`).toString().split('\n');
+} catch (err) {
+    console.log(`Save the input for this day to ${process.argv[2]}/input.txt`);
+    return;
+}
 const script = fs.readFileSync(`${process.argv[2]}/${process.argv[3]}.js`).toString();
 
 console.log(eval(script));
