@@ -1,1 +1,1 @@
-i=>[...[d='.'.repeat(n=i[1].length+1),...i,d].join`..`.matchAll(/\d+/g)].map(x=>a+=x-RegExp((r='[\\.\\d]{')+(y=x[0].length+2)+`}.{${q=1+n-y}}\\.${x}\\..{${q}}${r+y}}`,'g').test(x.input.slice((z=x.index)-n-2,z+n+y+2))*x,a=0)|a
+i=>[...[d='.'.repeat(n=i[1].length+1),...i,d].join`..`.matchAll(/\d+/g)].map(x=>a+=x-RegExp((r='[\\.\\d]{')+(y=x[0].length+2)+`}.{${q=1+n-y}}\\.${x}\\..{${q}}${r+y}}`).test(x.input.slice((z=x.index)-n-2,z+n+y+2))*x,a=0)|a
