@@ -7,7 +7,7 @@ if (process.argv.length < 4) {
 
 let input = '';
 try {
-    input = fs.readFileSync(`${process.argv[2]}/input.txt`).toString().split('\n');
+    input = fs.readFileSync(`${process.argv[2]}/input.txt`).toString().replaceAll('\r','').split('\n');
 } catch (err) {
     console.log(`Save the input for this day to ${process.argv[2]}/input.txt`);
     return;
